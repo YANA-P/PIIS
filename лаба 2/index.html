@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Movie DB</title>
+</head>
+<body>
+    <div id="movie-table"></div>
+
+    <script>
+        const personalMovieDB = {
+            privat: false,
+            movies: {
+                'Золушка': 9.5,
+                'Летучий корабль': 9.2,
+                'Таймлесс': 8.7
+            }
+        };
+
+        function displayMovieTable() {
+            if (personalMovieDB.privat) {
+                return;
+            }
+
+            const movieTableElement = document.getElementById('movie-table');
+            movieTableElement.innerHTML = '';
+
+            const table = document.createElement('table');
+            table.style.border = '1px solid black';
+            table.style.borderCollapse = 'collapse';
+
+            const headerRow = document.createElement('tr');
+            const headerCellMovie = document.createElement('th');
+            headerCellMovie.style.border = '1px solid black';
+            headerCellMovie.textContent = 'Фильм';
+            const headerCellRating = document.createElement('th');
+            headerCellRating.style.border = '1px solid black';
+            headerCellRating.textContent = 'Рейтинг';
+            headerRow.appendChild(headerCellMovie);
+            headerRow.appendChild(headerCellRating);
+            table.appendChild(headerRow);
+
+            for (const [movie, rating] of Object.entries(personalMovieDB.movies)) {
+                const row = document.createElement('tr');
+                const cellMovie = document.createElement('td');
+                cellMovie.style.border = '1px solid black';
+                cellMovie.textContent = movie;
+                const cellRating = document.createElement('td');
+                cellRating.style.border = '1px solid black';
+                cellRating.textContent = rating;
+                row.appendChild(cellMovie);
+                row.appendChild(cellRating);
+                table.appendChild(row);
+            }
+
+            movieTableElement.appendChild(table);
+        }
+
+        displayMovieTable();
+    </script>
+</body>
+</html>
