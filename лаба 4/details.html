@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="details-container">
+        <div class="shirt-image-container">
+            <img id="shirt-front" src="" alt="Front of T-Shirt">
+        </div>
+        <div class="shirt-details">
+            <h2 id="shirt-name">T-Shirt Details</h2>
+            <p id="shirt-price" class="price"></p>
+            <p id="shirt-description"></p>
+
+            <div class="options">
+                <div class="option-group">
+                    <label>Side:</label>
+                    <button id="side-front" class="side-button selected">Front</button>
+                    <button id="side-back" class="side-button">Back</button>
+                </div>
+                <div class="option-group">
+                    <label>Color:</label>
+                    <div id="color-buttons" class="color-buttons"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="shirts.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>

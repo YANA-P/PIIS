@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 2px solid #000080;
+    border-radius: 8px;
+    background-color: white;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card button {
+    background-color: #000080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.product-card button:hover {
+    background-color: #005f73;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-images img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.shirt-image-container {
+    max-width: 300px;
+}
+
+.shirt-image-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shirt-details {
+    max-width: 700px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.option-group {
+    margin-bottom: 15px;
+    display: flex; /* Используем flexbox для компоновки */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.option-group label {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 0; 
+    display: inline-block; /* Для правильного выравнивания по центру */
+}
+
+.side-button,
+.color-button {
+    padding: 10px 15px; /* Внутренние отступы */
+    margin-right: 5px; /* Пробел между кнопками */
+    border: 1px solid #ccc; /* Стиль границы */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для эффектов наведения */
+}
+
+.side-button.selected {
+    border: 3px solid #000080; /* Цвет границы при выделении */
+    background-color: #000080; /* Цвет фона при выделении */
+    color: white; /* Цвет текста при выделении */
+}
+
+.color-button.selected {
+    border: 3px solid #000080; /* Цвет границы при выделении */
+    
+}
+
+.color-button {
+    width: 60px; /* Ширина кнопок цвета */
+    height: 40px; /* Высота кнопок цвета */
+    display: inline-block; /* Для поддержания блока */
+    border: 1px solid #ccc; /* Граница по умолчанию */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.color-buttons {
+    display: inline-flex; /* Выстраиваем кнопки в ряд */
+    gap: 5px; /* Отступ между кнопками */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+

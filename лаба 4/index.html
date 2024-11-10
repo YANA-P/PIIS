@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Our T-Shirts</h1>
+    <div id="products-container" class="products-grid"></div>
+
+    <!-- Модальное окно для Quick View -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-name"></h3>
+            <p id="modal-description"></p>
+            <p id="modal-price" class="price"></p>
+            <div class="modal-images">
+                <img id="modal-front-image" src="" alt="Front of T-Shirt">
+                <img id="modal-back-image" src="" alt="Back of T-Shirt">
+            </div>
+        </div>
+    </div>
+
+    <script src="shirts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
