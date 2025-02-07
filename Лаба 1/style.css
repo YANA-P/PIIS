@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Sweet_Mavka_Script';
+    src: url('ofont.ru_Sweet\ Mavka\ Script.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Plainot';
+    src: url('ofont.ru_Plainot.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tolkien';
+    src: url('ofont.ru_Tolkien.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MY';
+    src: url('MY.ttf') format('truetype');
+}
+
+/* Пункт 1*/
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); /* Устанавливаем цвет текста на белый */
+}
+
+
+/* Пункт 2*/
+.container {
+    max-width: 1440px;
+    margin: auto; 
+}
+
+#film-description {
+    font-family: 'Sweet_Mavka_Script';
+}
+
+#film-description1 {
+    font-family: 'Plainot';
+}
+
+#film-description2 {
+    font-family: 'Tolkien';
+}
+
+#film-description4 {
+    font-family: 'MY';
+}
+
+/*пункт 4*/
+a {
+    color: black; /* Цвет ссылок - черный */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+ul {
+    list-style-type: none;
+}
+
+#description1 {
+    text-align: center;
+}
+
+#description2 {
+    text-align: left;
+}
+
+#description3 {
+    text-align: justify;
+}
+
+img {
+    width: 270px;
+    height: 270px;
+    border-radius: 20px;
+}
+
+#text-bold {
+    font-weight: bold;
+}
