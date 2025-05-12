@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtDesign - Студия дизайна</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Панель контактов -->
+    <div class="contacts-bar">
+        <a href="tel:+375(29)123-45-67" class="contacts-link">
+            <i class="fas fa-phone"></i>
+            <span>+375(29)123-45-67</span>
+        </a>
+        <a href="https://yandex.by/maps/157/minsk/house/Zk4YcwJkSkQFQFtpfXR4eXRgZA==/?ll=27.554312%2C53.898830&z=16" target="_blank" class="contacts-link">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Минск, пр-т. Независимости, 15</span>
+        </a>
+    </div>
+
+    <!-- Навигация -->
+<header>
+    <nav>
+        <a href="#home" class="logo">Art<span>Design</span></a>
+        <div class="burger-menu" id="burgerMenu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link">Главная</a>
+            <a href="portfolio.html" class="nav-link">Портфолио</a>
+            <a href="contacts.html" class="nav-link">Контакты</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+</header>
+    
+
+    
+    <!-- Меню разделов -->
+    <div class="section-menu">
+        <div class="menu-container">
+            <a href="#wall-painting" class="menu-item">
+                <i class="fas fa-paint-roller"></i>
+                <span>Роспись стен</span>
+            </a>
+            <a href="#landscape" class="menu-item">
+                <i class="fas fa-tree"></i>
+                <span>Ландшафтный дизайн</span>
+            </a>
+            <a href="#interior" class="menu-item">
+                <i class="fas fa-couch"></i>
+                <span>Дизайн интерьеров</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Карусель -->
+    <section class="hero" id="home">
+        <div class="carousel">
+            <div class="carousel-slide active" style="background-image: url('https://titanremont.ru/assets/img/fornews/belye-steny-v-interere-8.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80');"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80');"></div>
+        </div>
+        <div class="hero-content animate-fade">
+            <h1>Творческие решения для вашего пространства</h1>
+            <p>Мы создаем уникальные дизайны, которые отражают вашу индивидуальность и вдохновляют каждый день</p>
+            <a href="#interior" class="btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <!-- Роспись стен -->
+    <section id="wall-painting">
+        <h2 class="section-title">Роспись стен</h2>
+        <div class="services-container">
+            <button class="carousel-btn prev" onclick="moveCarousel('wall-painting', -1)">&#10094;</button>
+            <div class="services-carousel" id="wall-painting-carousel">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://photopole.ru/wp-content/uploads/vetka-magnoliia-affresco-1.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Художественная роспись</h3>
+                        <p class="service-description">Создаем уникальные художественные композиции на стенах вашего дома или офиса.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="wallModal" data-service="Художественная роспись">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5f2ecc8594a1d33040f8464a/1596922834675-MLBWGJMBYVVICHQ8QOLX/image-asset.jpeg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Граффити и стрит-арт</h3>
+                        <p class="service-description">Современные граффити и стрит-арт решения для интерьеров и экстерьеров.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="wallModal" data-service="Граффити и стрит-арт">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://mamka.moscow/wp-content/uploads/risunki-na-stenah-detskoj-idei-8.webp');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Детские комнаты</h3>
+                        <p class="service-description">Яркие и добрые рисунки для детских комнат. Создаем волшебный мир.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="wallModal" data-service="Детские комнаты">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://lepart.su/sites/default/files/inline/images/atmosfera1.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Фрески</h3>
+                        <p class="service-description">Классические фрески с использованием натуральных материалов.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="wallModal" data-service="Фрески">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://i.pinimg.com/736x/d4/8a/19/d48a1986fdbbfc8f13f348799a98283d.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">3D роспись</h3>
+                        <p class="service-description">Объемные изображения, создающие эффект присутствия.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="wallModal" data-service="3D роспись">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="moveCarousel('wall-painting', 1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Ландшафтный дизайн -->
+    <section id="landscape">
+        <h2 class="section-title">Ландшафтный дизайн</h2>
+        <div class="services-container">
+            <button class="carousel-btn prev" onclick="moveCarousel('landscape', -1)">&#10094;</button>
+            <div class="services-carousel" id="landscape-carousel">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Проектирование сада</h3>
+                        <p class="service-description">Создаем гармоничные и функциональные садовые пространства.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="landscapeModal" data-service="Проектирование сада">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://4-ru.ru/wp-content/uploads/2023/11/%D0%9B%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-%D1%81%D0%B0%D0%B4%D0%B0-%D1%81-%D1%84%D0%BE%D1%82%D0%BE.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Озеленение</h3>
+                        <p class="service-description">Подбор и посадка растений, создание цветников и газонов.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="landscapeModal" data-service="Озеленение">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://www.furnishhome.ru/articles/1543/1543_0.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Малые архитектурные формы</h3>
+                        <p class="service-description">Беседки, перголы, мостики и другие элементы для вашего сада.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="landscapeModal" data-service="Малые архитектурные формы">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://greencrona.com.ua/images/services/avtopoliv.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Системы полива</h3>
+                        <p class="service-description">Проектирование и установка автоматических систем полива.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="landscapeModal" data-service="Системы полива">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://500lux.ru/upload/medialibrary/c95/c9589a108ed50e3598ffc511c0d936b9.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ландшафтное освещение</h3>
+                        <p class="service-description">Создание атмосферного освещения для вашего сада.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="landscapeModal" data-service="Ландшафтное освещение">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="moveCarousel('landscape', 1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Дизайн интерьеров -->
+    <section id="interior">
+        <h2 class="section-title">Дизайн интерьеров</h2>
+        <div class="services-container">
+            <button class="carousel-btn prev" onclick="moveCarousel('interior', -1)">&#10094;</button>
+            <div class="services-carousel" id="interior-carousel">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Жилые помещения</h3>
+                        <p class="service-description">Создаем уютные и функциональные интерьеры квартир и домов.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="interiorModal" data-service="Жилые помещения">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Коммерческие пространства</h3>
+                        <p class="service-description">Дизайн офисов, ресторанов, магазинов и других помещений.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="interiorModal" data-service="Коммерческие пространства">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Авторский надзор</h3>
+                        <p class="service-description">Контроль за реализацией дизайн-проекта на всех этапах.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="interiorModal" data-service="Авторский надзор">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://www.eremont.ru/design/visual/img/vizualizaciya_main_2.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">3D визуализация</h3>
+                        <p class="service-description">Фотореалистичные 3D модели будущего интерьера.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="interiorModal" data-service="3D визуализация">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://www.eremont.ru/design/podbor-materialov/img/podbor-materialov_1.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Подбор материалов</h3>
+                        <p class="service-description">Помощь в выборе отделочных материалов, мебели и декора.</p>
+                        <div class="service-footer">
+                            <button class="btn open-modal-btn" data-modal="interiorModal" data-service="Подбор материалов">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="moveCarousel('interior', 1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Модальное окно для росписи стен -->
+    <div class="modal" id="wallModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Заказ услуги: <span class="modal-service-name">Художественная роспись</span></h2>
+            <form class="order-form">
+                <div class="form-group">
+                    <label for="wall-name">ФИО:</label>
+                    <input type="text" id="wall-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="wall-phone">Номер телефона:</label>
+                    <input type="tel" id="wall-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="wall-area">Площадь для росписи (м²):</label>
+                    <input type="number" id="wall-area" name="area" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Стиль росписи:</label>
+                    <div class="style-options">
+                        <div class="style-option">
+                            <input type="radio" id="wall-style1" name="wall-style" value="Классический" checked>
+                            <label for="wall-style1">
+                                <img src="https://www.angstrem-mebel.ru/upload/medialibrary/fec/fec8d7fb0b2aef153ebc5be220d35ff8.jpg" alt="Классический">
+                                <span>Классический</span>
+                            </label>
+                        </div>
+                        <div class="style-option">
+                            <input type="radio" id="wall-style2" name="wall-style" value="Современный">
+                            <label for="wall-style2">
+                                <img src="https://s3.stroi-news.ru/img/stilnaya-rospis-sten-v-interere-krasivo-1.jpg" alt="Современный">
+                                <span>Современный</span>
+                            </label>
+                        </div>
+                        <div class="style-option">
+                            <input type="radio" id="wall-style3" name="wall-style" value="Детский">
+                            <label for="wall-style3">
+                                <img src="https://nimbus-sten.ru/wp-content/uploads/2022/02/287ad4b8780f86e58d210f6dac51abb4.jpg" alt="Детский">
+                                <span>Минимализм</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="wall-comments">Дополнительные пожелания:</label>
+                    <textarea id="wall-comments" name="comments" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для ландшафтного дизайна -->
+    <div class="modal" id="landscapeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Заказ услуги: <span class="modal-service-name">Ландшафтный дизайн</span></h2>
+            <form class="order-form">
+                <div class="form-group">
+                    <label for="landscape-name">ФИО:</label>
+                    <input type="text" id="landscape-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="landscape-phone">Номер телефона:</label>
+                    <input type="tel" id="landscape-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="landscape-object">Наименование объекта:</label>
+                    <input type="text" id="landscape-object" name="object" required>
+                </div>
+                <div class="form-group">
+                    <label for="landscape-size">Примерный размер участка (соток):</label>
+                    <input type="number" id="landscape-size" name="size" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Наименование зоны:</label>
+                    <div class="style-options">
+                        <div class="style-option">
+                            <input type="radio" id="landscape-type1" name="landscape-type" value="Полный проект" checked>
+                            <label for="landscape-type1">
+                                <img src="https://www.ccnova.ru/images/blog/landshaftnyy-dizayn-uchastka-gid-po-stilyam/priusadebnyj-uchastok-v-stile-khaj-tek.jpg" alt="Полный проект">
+                                <span>Сад</span>
+                            </label>
+                        </div>
+                        <div class="style-option">
+                            <input type="radio" id="landscape-type2" name="landscape-type" value="Озеленение">
+                            <label for="landscape-type2">
+                                <img src="https://konturland.ru/web/img/statii/vodoemi_v_land_diz/42.webp" alt="Озеленение">
+                                <span>Клумба</span>
+                            </label>
+                        </div>
+                        <div class="style-option">
+                            <input type="radio" id="landscape-type3" name="landscape-type" value="Малые формы">
+                            <label for="landscape-type3">
+                                <img src="https://landshaftniydesign.ru/wp-content/uploads/2017/01/ShCyPrH7CKM.jpg" alt="Малые формы">
+                                <span>Пруд</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="landscape-comments">Дополнительные пожелания:</label>
+                    <textarea id="landscape-comments" name="comments" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для дизайна интерьеров -->
+    <div class="modal" id="interiorModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Заказ услуги: <span class="modal-service-name">Дизайн интерьеров</span></h2>
+            <form class="order-form">
+                <div class="form-group">
+                    <label for="interior-name">ФИО:</label>
+                    <input type="text" id="interior-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="interior-phone">Номер телефона:</label>
+                    <input type="tel" id="interior-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="interior-object">Наименование помещения:</label>
+                    <input type="text" id="interior-object" name="object" required>
+                </div>
+                <div class="form-group">
+                    <label for="interior-area">Площадь помещения (м²):</label>
+                    <input type="number" id="interior-area" name="area" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Тип услуги:</label>
+                    <div class="style-options">
+                        <div class="style-option">
+                            <input type="radio" id="interior-type1" name="interior-type" value="Полный проект" checked>
+                            <label for="interior-type1">
+                                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Полный проект">
+                                <span>Полный проект</span>
+                            </label>
+                        </div>
+                        <div class="style-option">
+                            <input type="radio" id="interior-type2" name="interior-type" value="Планировка">
+                            <label for="interior-type2">
+                                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Планировка">
+                                <span>Планировка</span>
+                            </label>
+                        </div>
+                        <div class="style-option">
+                            <input type="radio" id="interior-type3" name="interior-type" value="Авторский надзор">
+                            <label for="interior-type3">
+                                <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Авторский надзор">
+                                <span>Авторский надзор</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="interior-comments">Дополнительные пожелания:</label>
+                    <textarea id="interior-comments" name="comments" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ArtDesign</h3>
+                <p>Студия дизайна интерьеров, ландшафтов и художественной росписи</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +375 (29) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@artdesign.by</p>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 ArtDesign. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

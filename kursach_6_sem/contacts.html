@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtDesign - Контакты</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Панель контактов -->
+    <div class="contacts-bar">
+        <a href="tel:+375(29)123-45-67" class="contacts-link">
+            <i class="fas fa-phone"></i>
+            <span>+375(29)123-45-67</span>
+        </a>
+        <a href="https://yandex.by/maps/157/minsk/house/Zk4YcwJkSkQFQFtpfXR4eXRgZA==/?ll=27.554312%2C53.898830&z=16" target="_blank" class="contacts-link">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Минск, пр-т. Независимости, 15</span>
+        </a>
+    </div>
+
+    <!-- Навигация -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Art<span>Design</span></a>
+            <div class="burger-menu" id="burgerMenu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Блок контактов -->
+        <section id="contacts" class="contact-section">
+            <h1 class="section-title">Наши контакты</h1>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <h3>Телефон</h3>
+                    <a href="tel:+375291234567" class="contact-link">+375 (29) 123-45-67</a>
+                    <p>Работаем с 9:00 до 21:00 без выходных</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:info@artdesign.by" class="contact-link">info@artdesign.by</a>
+                    <p>Ответим в течение 1 рабочего дня</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h3>Адрес</h3>
+                    <a href="https://yandex.by/maps/157/minsk/house/Zk4YcwJkSkQFQFtpfXR4eXRgZA==/?ll=27.554312%2C53.898830&z=16" target="_blank" class="contact-link">г. Минск, пр-т Независимости, 15</a>
+                    <p>Офис работает с 10:00 до 19:00 (Пн-Пт)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section id="feedback" class="feedback-section">
+            <h2 class="section-title">Обратная связь</h2>
+            <form class="feedback-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+        </section>
+
+        <!-- Карта и как нас найти -->
+        <section id="location" class="location-section">
+            <h2 class="section-title">Как нас найти</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Мы находимся в центре Минска</h3>
+                    <p>Наш офис расположен в бизнес-центре "Независимость" на 3 этаже. Вход со стороны главного фасада.</p>
+                    <div class="transport-info">
+                        <div class="transport-item">
+                            <i class="fas fa-subway"></i>
+                            <p>Станция метро "Октябрьская" (5 минут пешком)</p>
+                        </div>
+                        <div class="transport-item">
+                            <i class="fas fa-bus"></i>
+                            <p>Автобусы: 1, 69, 73 (остановка "Площадь Независимости")</p>
+                        </div>
+                        <div class="transport-item">
+                            <i class="fas fa-car"></i>
+                            <p>Парковка перед бизнес-центром (платная)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.270975284615!2d27.5618163158599!3d53.89687698010097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0L_RgNC-0YHQvy4g0J3QtdC60LDRgdC40YLQtdC70YzQvdC-0LkgMTUsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1620000000000!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футтер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ArtDesign</h3>
+                <p>Студия дизайна интерьеров, ландшафтов и художественной росписи</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +375 (29) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@artdesign.by</p>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 ArtDesign. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="contacts.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtDesign - Портфолио</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <!-- Панель контактов -->
+     <div class="contacts-bar">
+        <a href="tel:+375(29)123-45-67" class="contacts-link">
+            <i class="fas fa-phone"></i>
+            <span>+375(29)123-45-67</span>
+        </a>
+        <a href="https://yandex.by/maps/157/minsk/house/Zk4YcwJkSkQFQFtpfXR4eXRgZA==/?ll=27.554312%2C53.898830&z=16" target="_blank" class="contacts-link">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Минск, пр-т. Независимости, 15</span>
+        </a>
+    </div>
+
+    <!-- Навигация -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Art<span>Design</span></a>
+            <div class="burger-menu" id="burgerMenu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Фильтры портфолио -->
+        <section class="portfolio-filters">
+            <div class="container">
+                <h1 class="section-title">Наши работы</h1>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все работы</button>
+                    <button class="filter-btn" data-filter="wall-painting">Роспись стен</button>
+                    <button class="filter-btn" data-filter="landscape">Ландшафтный дизайн</button>
+                    <button class="filter-btn" data-filter="interior">Дизайн интерьеров</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея работ -->
+        <section class="portfolio-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!--Работа 1 -->
+                    <div class="portfolio-item" data-category="wall-painting">
+                        <div class="portfolio-img">
+                            <img src="https://www.ivd.ru/images/cache/2019/6/12/widen_414_q90_896611_1c197e777a.jpeg" alt="Художественная роспись">
+                            <div class="portfolio-overlay">
+                                <h3>Художественная роспись</h3>
+                                <p>Квартира на ул. Толстого, 15</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 2 -->
+                    <div class="portfolio-item" data-category="landscape">
+                        <div class="portfolio-img">
+                            <img src="https://konturland.ru/web/img/statii/44/22.webp" alt="Ландшафтный дизайн">
+                            <div class="portfolio-overlay">
+                                <h3>Ландшафтный дизайн</h3>
+                                <p>Частный дом в Бресте</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 3 -->
+                    <div class="portfolio-item" data-category="interior">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Дизайн интерьера">
+                            <div class="portfolio-overlay">
+                                <h3>Дизайн интерьера</h3>
+                                <p>Коттедж под Минском, 220 м²</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Работа 4 -->
+                    <div class="portfolio-item" data-category="landscape">
+                        <div class="portfolio-img">
+                            <img src="https://green-7.ru/upload/iblock/127/rlzzu69d62nv9v1bjltgzkp9qvpmvnlx.jpg" alt="Ландшафтный дизайн">
+                            <div class="portfolio-overlay">
+                                <h3>Ландшафтный дизайн</h3>
+                                <p>Частный дом под Минском</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Работа 5 -->
+                    <div class="portfolio-item" data-category="interior">
+                        <div class="portfolio-img">
+                            <img src="https://home-design.dp.ua/wp-content/uploads/2021/03/2.jpg" alt="Дизайн интерьера">
+                            <div class="portfolio-overlay">
+                                <h3>Дизайн интерьера</h3>
+                                <p>Офисное пространство, 70 м²</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Работа 6 -->
+                    <div class="portfolio-item" data-category="wall-painting">
+                        <div class="portfolio-img">
+                            <img src="https://nimbus-sten.ru/wp-content/uploads/2020/06/6.jpg" alt="Художественная роспись">
+                            <div class="portfolio-overlay">
+                                <h3>Художественная роспись</h3>
+                                <p>Офис Dana Moll</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 7 -->
+                    <div class="portfolio-item" data-category="interior">
+                        <div class="portfolio-img">
+                            <img src="https://static.tildacdn.com/tild3732-6535-4864-b731-633635383632/56.jpg" alt="Дизайн интерьера">
+                            <div class="portfolio-overlay">
+                                <h3>Дизайн интерьера</h3>
+                                <p>Квартира в ЖК "Маяк-Минск", 68 м²</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Работа 8 -->
+
+                    <div class="portfolio-item" data-category="landscape">
+                        <div class="portfolio-img">
+                            <img src="https://greenton.by/upload/resize_cache/webp/images/gortenziya3.webp" alt="Ландшафтный дизайн">
+                            <div class="portfolio-overlay">
+                                <h3>Ландшафтный дизайн</h3>
+                                <p>Городской парк в Гродно</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Работа 9 -->
+                    <div class="portfolio-item" data-category="interior">
+                        <div class="portfolio-img">
+                            <img src="https://oneandhome.ru/sites/default/files/blog/gostinoy-v-angliyskom-stile-01.jpg" alt="Дизайн интерьера">
+                            <div class="portfolio-overlay">
+                                <h3>Дизайн интерьера</h3>
+                                <p>Частный дом в английском стиле, 330 м²</p>
+                                <a href="#" class="btn btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Футтер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ArtDesign</h3>
+                <p>Студия дизайна интерьеров, ландшафтов и художественной росписи</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +375 (29) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@artdesign.by</p>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 ArtDesign. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <script src="portfolio.js"></script> 
+</body>
+</html>
